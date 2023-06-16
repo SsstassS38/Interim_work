@@ -1,11 +1,11 @@
 import function as f
-import ui
+import user_int
 
 
 def run():
     input_from_user = ''
     while input_from_user != '7':
-        ui.menu()
+        user_int.menu()
         input_from_user = input().strip()
         if input_from_user == '1':
             f.show('all')
@@ -23,5 +23,5 @@ def run():
             f.show('id')
             f.id_edit_del_show('show')
         if input_from_user == '7':
-            ui.goodbuy()
+            user_int.goodbuy()
             break
